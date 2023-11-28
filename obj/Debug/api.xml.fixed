@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<api api-source="JavaTypeSystem">
+  <package name="com.daimajia.easing" jni-name="com/daimajia/easing">
+    <interface abstract="true" deprecated="not deprecated" final="false" name="BaseEasingMethod.EasingListener" static="true" visibility="public" jni-signature="Lcom/daimajia/easing/BaseEasingMethod$EasingListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="on" jni-signature="(FFFFF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="float" jni-type="F" />
+        <parameter name="p1" type="float" jni-type="F" />
+        <parameter name="p2" type="float" jni-type="F" />
+        <parameter name="p3" type="float" jni-type="F" />
+        <parameter name="p4" type="float" jni-type="F" />
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="com.daimajia.easing.BuildConfig" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="LIBRARY_PACKAGE_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.daimajia.easing&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="VERSION_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="7" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="VERSION_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;2.3&quot;" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Glider" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/Glider;">
+      <constructor deprecated="not deprecated" final="false" name="Glider" jni-signature="()V" bridge="false" static="false" type="com.daimajia.easing.Glider" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="glide" jni-signature="(Lcom/daimajia/easing/Skill;FLandroid/animation/PropertyValuesHolder;)Landroid/animation/PropertyValuesHolder;" bridge="false" native="false" return="android.animation.PropertyValuesHolder" jni-return="Landroid/animation/PropertyValuesHolder;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="skill" type="com.daimajia.easing.Skill" jni-type="Lcom/daimajia/easing/Skill;" />
+        <parameter name="duration" type="float" jni-type="F" />
+        <parameter name="propertyValuesHolder" type="android.animation.PropertyValuesHolder" jni-type="Landroid/animation/PropertyValuesHolder;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="glide" jni-signature="(Lcom/daimajia/easing/Skill;FLandroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;" bridge="false" native="false" return="android.animation.ValueAnimator" jni-return="Landroid/animation/ValueAnimator;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="skill" type="com.daimajia.easing.Skill" jni-type="Lcom/daimajia/easing/Skill;" />
+        <parameter name="duration" type="float" jni-type="F" />
+        <parameter name="animator" type="android.animation.ValueAnimator" jni-type="Landroid/animation/ValueAnimator;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="glide" jni-signature="(Lcom/daimajia/easing/Skill;FLandroid/animation/ValueAnimator;[Lcom/daimajia/easing/BaseEasingMethod$EasingListener;)Landroid/animation/ValueAnimator;" bridge="false" native="false" return="android.animation.ValueAnimator" jni-return="Landroid/animation/ValueAnimator;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="skill" type="com.daimajia.easing.Skill" jni-type="Lcom/daimajia/easing/Skill;" />
+        <parameter name="duration" type="float" jni-type="F" />
+        <parameter name="animator" type="android.animation.ValueAnimator" jni-type="Landroid/animation/ValueAnimator;" />
+        <parameter name="listeners" type="com.daimajia.easing.BaseEasingMethod.EasingListener..." jni-type="[Lcom/daimajia/easing/BaseEasingMethod$EasingListener;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.daimajia.easing.Skill&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="Skill" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/Skill;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMethod" jni-signature="(F)Lcom/daimajia/easing/BaseEasingMethod;" bridge="false" native="false" return="com.daimajia.easing.BaseEasingMethod" jni-return="Lcom/daimajia/easing/BaseEasingMethod;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/daimajia/easing/Skill;" bridge="false" native="false" return="com.daimajia.easing.Skill" jni-return="Lcom/daimajia/easing/Skill;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/daimajia/easing/Skill;" bridge="false" native="false" return="com.daimajia.easing.Skill[]" jni-return="[Lcom/daimajia/easing/Skill;" static="true" synchronized="false" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="BackEaseIn" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BackEaseInOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BackEaseOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BounceEaseIn" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BounceEaseInOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BounceEaseOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CircEaseIn" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CircEaseInOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CircEaseOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CubicEaseIn" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CubicEaseInOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CubicEaseOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ElasticEaseIn" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ElasticEaseOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ExpoEaseIn" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ExpoEaseInOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ExpoEaseOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="Linear" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="QuadEaseIn" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="QuadEaseInOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="QuadEaseOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="QuintEaseIn" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="QuintEaseInOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="QuintEaseOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SineEaseIn" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SineEaseInOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SineEaseOut" jni-signature="Lcom/daimajia/easing/Skill;" static="true" transient="false" type="com.daimajia.easing.Skill" type-generic-aware="com.daimajia.easing.Skill" visibility="public" volatile="false" />
+    </class>
+  </package>
+  <package name="com.daimajia.easing.back" jni-name="com/daimajia/easing/back">
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="BackEaseIn" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/back/BackEaseIn;">
+      <constructor deprecated="not deprecated" final="false" name="BackEaseIn" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.back.BackEaseIn" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="BackEaseIn" jni-signature="(FF)V" bridge="false" static="false" type="com.daimajia.easing.back.BackEaseIn" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+        <parameter name="back" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="BackEaseInOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/back/BackEaseInOut;">
+      <constructor deprecated="not deprecated" final="false" name="BackEaseInOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.back.BackEaseInOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="BackEaseInOut" jni-signature="(FF)V" bridge="false" static="false" type="com.daimajia.easing.back.BackEaseInOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+        <parameter name="back" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="BackEaseOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/back/BackEaseOut;">
+      <constructor deprecated="not deprecated" final="false" name="BackEaseOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.back.BackEaseOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="BackEaseOut" jni-signature="(FF)V" bridge="false" static="false" type="com.daimajia.easing.back.BackEaseOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+        <parameter name="back" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+  </package>
+  <package name="com.daimajia.easing.bounce" jni-name="com/daimajia/easing/bounce">
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="BounceEaseIn" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/bounce/BounceEaseIn;">
+      <constructor deprecated="not deprecated" final="false" name="BounceEaseIn" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.bounce.BounceEaseIn" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="BounceEaseInOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/bounce/BounceEaseInOut;">
+      <constructor deprecated="not deprecated" final="false" name="BounceEaseInOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.bounce.BounceEaseInOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="BounceEaseOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/bounce/BounceEaseOut;">
+      <constructor deprecated="not deprecated" final="false" name="BounceEaseOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.bounce.BounceEaseOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+  </package>
+  <package name="com.daimajia.easing.circ" jni-name="com/daimajia/easing/circ">
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="CircEaseIn" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/circ/CircEaseIn;">
+      <constructor deprecated="not deprecated" final="false" name="CircEaseIn" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.circ.CircEaseIn" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="CircEaseInOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/circ/CircEaseInOut;">
+      <constructor deprecated="not deprecated" final="false" name="CircEaseInOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.circ.CircEaseInOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="CircEaseOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/circ/CircEaseOut;">
+      <constructor deprecated="not deprecated" final="false" name="CircEaseOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.circ.CircEaseOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+  </package>
+  <package name="com.daimajia.easing.cubic" jni-name="com/daimajia/easing/cubic">
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="CubicEaseIn" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/cubic/CubicEaseIn;">
+      <constructor deprecated="not deprecated" final="false" name="CubicEaseIn" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.cubic.CubicEaseIn" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="CubicEaseInOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/cubic/CubicEaseInOut;">
+      <constructor deprecated="not deprecated" final="false" name="CubicEaseInOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.cubic.CubicEaseInOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="CubicEaseOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/cubic/CubicEaseOut;">
+      <constructor deprecated="not deprecated" final="false" name="CubicEaseOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.cubic.CubicEaseOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+  </package>
+  <package name="com.daimajia.easing.elastic" jni-name="com/daimajia/easing/elastic">
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="ElasticEaseIn" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/elastic/ElasticEaseIn;">
+      <constructor deprecated="not deprecated" final="false" name="ElasticEaseIn" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.elastic.ElasticEaseIn" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="ElasticEaseInOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/elastic/ElasticEaseInOut;">
+      <constructor deprecated="not deprecated" final="false" name="ElasticEaseInOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.elastic.ElasticEaseInOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="ElasticEaseOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/elastic/ElasticEaseOut;">
+      <constructor deprecated="not deprecated" final="false" name="ElasticEaseOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.elastic.ElasticEaseOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+  </package>
+  <package name="com.daimajia.easing.expo" jni-name="com/daimajia/easing/expo">
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="ExpoEaseIn" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/expo/ExpoEaseIn;">
+      <constructor deprecated="not deprecated" final="false" name="ExpoEaseIn" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.expo.ExpoEaseIn" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="ExpoEaseInOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/expo/ExpoEaseInOut;">
+      <constructor deprecated="not deprecated" final="false" name="ExpoEaseInOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.expo.ExpoEaseInOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="ExpoEaseOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/expo/ExpoEaseOut;">
+      <constructor deprecated="not deprecated" final="false" name="ExpoEaseOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.expo.ExpoEaseOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+  </package>
+  <package name="com.daimajia.easing.linear" jni-name="com/daimajia/easing/linear">
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="Linear" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/linear/Linear;" managedName="MyLinear">
+      <constructor deprecated="not deprecated" final="false" name="Linear" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.linear.Linear" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+  </package>
+  <package name="com.daimajia.easing.quad" jni-name="com/daimajia/easing/quad">
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="QuadEaseIn" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/quad/QuadEaseIn;">
+      <constructor deprecated="not deprecated" final="false" name="QuadEaseIn" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.quad.QuadEaseIn" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="QuadEaseInOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/quad/QuadEaseInOut;">
+      <constructor deprecated="not deprecated" final="false" name="QuadEaseInOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.quad.QuadEaseInOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="QuadEaseOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/quad/QuadEaseOut;">
+      <constructor deprecated="not deprecated" final="false" name="QuadEaseOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.quad.QuadEaseOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+  </package>
+  <package name="com.daimajia.easing.quint" jni-name="com/daimajia/easing/quint">
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="QuintEaseIn" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/quint/QuintEaseIn;">
+      <constructor deprecated="not deprecated" final="false" name="QuintEaseIn" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.quint.QuintEaseIn" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="QuintEaseInOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/quint/QuintEaseInOut;">
+      <constructor deprecated="not deprecated" final="false" name="QuintEaseInOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.quint.QuintEaseInOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="QuintEaseOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/quint/QuintEaseOut;">
+      <constructor deprecated="not deprecated" final="false" name="QuintEaseOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.quint.QuintEaseOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+  </package>
+  <package name="com.daimajia.easing.sine" jni-name="com/daimajia/easing/sine">
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="SineEaseIn" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/sine/SineEaseIn;">
+      <constructor deprecated="not deprecated" final="false" name="SineEaseIn" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.sine.SineEaseIn" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="SineEaseInOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/sine/SineEaseInOut;">
+      <constructor deprecated="not deprecated" final="false" name="SineEaseInOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.sine.SineEaseInOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.daimajia.easing.BaseEasingMethod" extends-generic-aware="com.daimajia.easing.BaseEasingMethod" jni-extends="Lcom/daimajia/easing/BaseEasingMethod;" final="false" name="SineEaseOut" static="false" visibility="public" jni-signature="Lcom/daimajia/easing/sine/SineEaseOut;">
+      <constructor deprecated="not deprecated" final="false" name="SineEaseOut" jni-signature="(F)V" bridge="false" static="false" type="com.daimajia.easing.sine.SineEaseOut" synthetic="false" visibility="public">
+        <parameter name="duration" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calculate" jni-signature="(FFFF)Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="t" type="float" jni-type="F" />
+        <parameter name="b" type="float" jni-type="F" />
+        <parameter name="c" type="float" jni-type="F" />
+        <parameter name="d" type="float" jni-type="F" />
+      </method>
+    </class>
+  </package>
+</api>
